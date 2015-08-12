@@ -3,18 +3,21 @@
 <html>
 
 <head>
+
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <title>I love a good dnut</title>
-    <link rel="stylesheet" href"">
+  </meta>
+    <title >I love a good dnut</title>
+      <link rel="stylesheet" href""></link>
+
 </head>
+
 
 <body>
 
-  <h3>Model a Donut Shop, dood.</h3>
-  <p>This is a table that models the amount of donuts that each Top Pot donut location needs to make on a daily basis, broken down by hour.</p>
-
-  <table id="donut-table">
+  <h2>Create and edit a new location! Saweet!</h2>
+  <p>This is a table that models the amount of donuts that an oompa loompa at each Top Pot donut location needs to make on a daily basis, broken down by hour.</p>
+  <table id="donut_table" border="8" padding="10">
     <tr>
       <th>Location</th>
       <th>7:00 AM</th>
@@ -31,14 +34,39 @@
       <th>6:00 PM</th>
       <th>Total</th>
     </tr>
+  </table>
 
-</table>
-
-  <script src="js/script.js"></script>
+<p>
+  <table>
+    <form id="new_shop_form">
+        <tr><td>
+          <label for="location_name">Shop Location: </label>
+            <input id="location_name" type="text"></td>
+        </tr>
+        <tr><td>
+          <label for="min_cust">Minimum Customers/hour: </label>
+            <input id="min_cust" type="number"></td>
+        </tr>
+        <tr><td>
+          <label for="max_cust">Maximum Customers/hour: <label>
+            <input id="max_cust" type="number"></td>
+        </tr>
+        <tr><td>
+          <label for="avg_donuts">Average Number Donuts: </label>
+            <input id="avg_donuts" type="number"></td>
+        </tr>
+        <tr><td>
+          <button id="add_new_shop" type="button">Click for donuts</button></td>
+        </tr>
+    </form>
+  </table>
+</p>
 
 <p><footer> Created by Steven WA </footer></p>
 
 </body>
+
+  <script src="js/script.js"></script>
 
 </html>
 
