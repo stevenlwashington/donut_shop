@@ -49,6 +49,8 @@ DonutShop.prototype.render = function(){
   wedgewood.getDonutsByTheHr();
   ballard.getDonutsByTheHr();
 
+//may need an if...else statement?
+
     var table = document.getElementById("donut_table"); //append name
     var tableRow = document.createElement("tr"); // creates new table row
     tableRow.innerHTML = this.location; //takes location and stages in tableRow variable
@@ -94,3 +96,9 @@ var newShop = new DonutShop(newLocation, newMinCust, newMaxCust, newAvgDonuts);
 }
 
 newShopButton.addEventListener("click", handleShopSubmit);
+//look into adding one more for updating the single row w/out updating the other rows
+
+
+
+//add a check function to see if the new location is already in array
+//need to add a function that enables the user to update an existing location and that location only w/out updating the other row data
