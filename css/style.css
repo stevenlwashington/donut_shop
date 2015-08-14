@@ -1,52 +1,79 @@
-/*stylesheet for donut_shop
-TABLE OF CONTENTS
-heading lines 5-10
-text 11-20
-colors 21-30
-layout 40-60
-animation 61-90
+/*
+Table of Contents:
+--background 17-
+--text
+--colors
+--layout
+--animations
+<--COLORS-->
+#0F2D40--DARK BLUE
+#194759--DARK-MED BLUE
+#296B73--MEDIUM BLUE
+#3E8C84--MEDIUM GREEN
+#D8F2F0--BABY BLUE
 */
 
-*{
-  font-family: 'Orbitron', sans-serif;}
 
+/*background*/
 body {
-  background-image:url("http://simpleicon.com/wp-content/uploads/pie-chart-4.png");
+  background-color:#ADD6C0;
+  width: 90%;
+  background: url("http://simpleicon.com/wp-content/uploads/pie-chart-4.png");
   background-repeat: no-repeat;
   background-size: 220px;
-  background-position: top center;
-  background-color:#FFDEA1;
+  background-position: top right;
+  color: #ffffff;
 }
 
-h1 {
-  font-size:60px;
-  font-weight:300;
-  line-height:180px;
-  color:#E54C10;
-  margin:0;
+#header {
+  font-size: 40px;
+  text-align: center;
+  padding-top: 30px;
+  color: #B64926;
 }
 
-h2{font-size:20px; font-weight:500; line-height:5px; margin:0;text-align: left;}
-h3{font-size:40px; fone-weight:500; line-height:50px; margin:50px 0;text-align:center;}
-
-
-p{margin:30px 0;}
-
-table {
-  width:1050px;
-}
-
-td, tr {padding: 5px 15px 15px 15px;}
-
-th {
-  letter-spacing: 0.05em;
-  font-size: 95%;
-  border-bottom: 1px;
-  border-top: 1px;
+#content {
+  overflow: auto;
   text-align: center;
 }
 
-input {
+#nav{
+  margin: 0;
+  text-align: center;
+  position: fixed;
+  background-color: #7F8C9D;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  line-style-type: none;
+  padding:0.2em, 0;
+  display: inline;
+  overflow: hidden;
+  list-style-type: none;
+  overflow: hidden;
+  text-transform: lowercase;
+  font-size: 30px;
+  padding-bottom: 0;
+}
+
+li {
+  display: inline;
+  padding: 0.5em;
+}
+
+/*.column1, .column2, .column3 {
+  width: 31.3%;
+  float: center;
+  margin: 1%;
+}*/
+
+/*#feature, .article {
+  height:1em;
+  margin-bottom: 3em;
+}*/
+
+#form {
   font-size: 120%;
   color: #5A5854;
   background-color: #E5FCFF;
@@ -57,6 +84,15 @@ input {
   background-position: 8px 9px;
   display: block;
   margin-bottom: 10px;
+  width: 300px;
+  display: inline-block;
+  position: relative;
+
+}
+
+label {
+  text-align: left;
+  padding-right: 100px;
 }
 
 input:focus, input:hover {
@@ -64,24 +100,113 @@ input:focus, input:hover {
   border: 1px solid #00A8FF;
 }
 
-form {
-  border-bottom: 1px solid #efefef;
-  margin: 10px;
-  padding-bottom: 10px;
-  width: 250px;
-  background-color: #00A8FF;
+
+/*table*/
+
+td {
+  padding: 15px;
 }
 
-button {
-  color: #444444;
-  text-shadow: 0px 1px 1px #ffffff;
-  border-bottom: 2px solid #b2b2b2;
-  background-color: #b9e4e3;
+#table_padding {
+  padding-top: 5%;
+  padding-left: 2%;
 }
 
-button:hover {
-  color:#ffffff;
-  border: 1px solid #a4a4a4;
-  border-top: 2px solid #b2b2b2;
-  background-color: #3b5998;
+#fieldset_shops {
+  border-color: #0F2D40;
+  border-width: 10px;
+  width: 1000px;
+  margin-left: auto;
+  margin-right: auto;
 }
+
+#donut_table {
+  border-color: #D8F2F0;
+  background-color: #D8F2F0;
+  width: 100%;
+}
+
+#table_title {
+  color: #ffffff;
+  font-family: arial;
+  font-size: 20px;
+}
+
+th {
+  color: #54594C;
+  font-family: arial
+}
+
+td {
+  color: #54594C;
+  padding: 10px;
+  padding-right: 12px;
+  font-family: 'Syncopate', sans-serif;
+}
+
+tr {
+  color: #54594C;
+  font-family: 'Syncopate', sans-serif;
+  font-weight: bold;
+}
+
+/*form*/
+
+#form_title {
+  color: #3E8C84;
+  font-family: arial;
+  font-size: 10px;
+}
+
+#new-shop-form{
+  border-color: #54594C;
+  border-width: 4px;
+  width: 20%;
+  display: inline-block;
+  position: relative;
+  padding-left: 2%;
+  z-index: 5;
+}
+
+fieldset {
+  border-color: #54594C;
+  background-color: #000D0C;
+}
+
+label {
+  font-family: 'Syncopate', sans-serif;
+  color: #54594C;
+}
+
+#content {
+  float: right;
+  width:100%;
+  font-family: arial;
+  color: #54594C;
+  background-color: #7F8C9D;
+  padding-left: 0;
+  padding-right: 0  ;
+}
+
+#add_new_shop {
+  color: #000D0C;
+  background-color: #7F8C9D;
+  border-color: #54594C;
+}
+
+input {
+  background-color: #54594C;
+  border-color: #BFB999;
+  display: block;
+}
+
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 75px;
+  background-color: #000D0C;
+  width: 100%;
+  z-index: 10;
+}
+
